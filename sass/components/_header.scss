@@ -1,0 +1,119 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: var(--contacts-footer-colour);
+    border-bottom: 1px solid #ececec;
+  }
+  .header__page {
+    display: flex;
+  }
+  
+  .header__navigation {
+    display: flex;
+    align-items: center;
+  }
+  /*Logo*/
+  .logo {
+    margin-right: 93px;
+  
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--top-logo-colour);
+  }
+  
+  .logo__web {
+    color: var(--accent-colour);
+  }
+  
+  .navigation {
+    display: flex;
+  }
+  
+  .navigation__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-colour);
+    transition: color var(--timeing-funktion);
+
+    &:hover,
+  &:focus {
+    color: var(--accent-colour);
+  }
+  }
+
+  .navigation__item {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  
+  
+  .navigation__link--current {
+    color: var(--accent-colour);
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      border-radius: 2px;
+      width: 100%;
+      height: 4px;
+      background-color: var(--buttom-colour);
+    }
+  }
+  
+  /* Contacts */
+  .contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .contact__item {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  
+  
+  .contact__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--contacts-header-colour);
+    transition: color var(--timeing-funktion);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-colour);
+    }
+  }
+  
+  .contact__icon {
+    margin-right: 10px;
+    fill: currentColor;
+    transition: fill var(--timeing-funktion);
+    .contact__link:hover &,
+  .contact__link:focus & {
+    fill: var(--accent-colour);
+  }
+  }
+  
+ 
+  
+  
+  

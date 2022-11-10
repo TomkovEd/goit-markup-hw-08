@@ -1,0 +1,52 @@
+.task {
+    padding-top: 0px;
+  }
+  
+  .task__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--title-colour);
+  }
+  .task__list {
+    display: flex;
+  }
+  
+  .task__image {
+    margin-right: 30px;
+  
+    width: 370px;
+    height: 294px;
+    left: 215px;
+    top: 1058px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  
+  
+  .task__thumb {
+    position: relative;
+  }
+  
+  .task__text {
+    width: 370px;
+    height: 70px;
+  
+    position: absolute;
+    bottom: 0px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--bot-logo-colour);
+    background: rgba(47, 48, 58, 0.8);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
