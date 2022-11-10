@@ -39,6 +39,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 body {
@@ -55,11 +56,25 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .list {
@@ -265,19 +280,27 @@ body {
 
 .features {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .features__item {
-  margin-right: 30px;
-  width: 270px;
+  width: 100%;
 }
-.features__item:last-child {
-  margin: 0px;
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .features__image {
   margin-bottom: 30px;
-  width: 270px;
+  width: 100%;
   height: 120px;
   display: flex;
   align-items: center;
@@ -294,6 +317,11 @@ body {
   text-transform: uppercase;
   color: var(--title-colour);
 }
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
+}
 
 .features__text {
   font-size: 14px;
@@ -303,6 +331,11 @@ body {
 
 .task {
   padding-top: 0px;
+}
+@media screen and (max-width: 1199px) {
+  .task {
+    display: none;
+  }
 }
 
 .task__title {
@@ -364,16 +397,25 @@ body {
 
 .team__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .team__member {
-  margin-right: 30px;
+  width: 100%;
   background-color: var(--bot-logo-colour);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team__member:last-child {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .team__member {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__member {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team__photo {
@@ -445,13 +487,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.client__item {
-  margin-right: 30px;
-}
-.client__item:last-child {
-  margin-right: 0px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .client__link {

@@ -17,14 +17,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   
-  .client__item {
-    margin-right: 30px;
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
+  // .client__item {
+  //   width: calc((100% - 60px)/2);
+  // }
   
   
   
