@@ -50,8 +50,9 @@
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
-    @include desktop {padding-top: 94px;
-    padding-bottom: 94px;}
+    // @include desktop{padding-top: 94px;}
+    // @include desktop {padding-top: 94px;
+    // padding-bottom: 94px;}
   }
   
   .container {
@@ -59,9 +60,10 @@
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    @include mobile{width: 480px;}
-    @include tablet{width: 768px;}
-    @include desktop{width: 1200px;}
+    
+    @include mobile {width: 480px;}
+    @include tablet {width: 768px;}
+    @include desktop {width: 1200px;}
   }
   
   .list {
