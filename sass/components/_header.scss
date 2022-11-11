@@ -3,9 +3,14 @@
     padding-bottom: 24px;
     background-color: var(--contacts-footer-colour);
     border-bottom: 1px solid #ececec;
+
+    
   }
   .header__page {
     display: flex;
+    // @media screen and (max-width: 1000px ) {display: none;
+      
+    // }
   }
   
   .header__navigation {

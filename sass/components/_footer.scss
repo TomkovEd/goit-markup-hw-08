@@ -5,7 +5,8 @@
   }
   .footer__page {
     display: flex;
-    align-items: baseline;
+    // justify-content: center;
+    // align-items: baseline;
   }
   .logo__color {
     display: block;
@@ -38,7 +39,7 @@
   
   
   .social {
-    margin-left: 70px;
+    // margin-left: 70px;
   }
   .social__title {
     margin-bottom: 20px;
@@ -73,7 +74,7 @@
   
   
   .footer-form {
-    margin-left: auto;
+    // margin-left: auto;
     input {
       padding: 15px 16px;
       margin-right: 12px;

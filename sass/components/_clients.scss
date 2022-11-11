@@ -1,9 +1,6 @@
-.client {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+
   .clients__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   
     font-weight: 700;
     font-size: 36px;
@@ -11,6 +8,8 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-colour);
+    @include desktop{margin-bottom: 50px;}
+
   }
   
   .client__list {
@@ -20,12 +19,6 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-  
-  // .client__item {
-  //   width: calc((100% - 60px)/2);
-  // }
-  
-  
   
   .client__link {
     display: flex;
