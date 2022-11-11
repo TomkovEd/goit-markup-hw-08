@@ -27,7 +27,7 @@
     border-radius: 0px 0px 4px 4px;
 
     @include tablet{width: calc((100% - 30px)/2)}
-    @include desktop {width: calc((100% - 90px)/4);}
+    @include desktop {width: calc((100% - 90px)/4)}
   }
   
   
