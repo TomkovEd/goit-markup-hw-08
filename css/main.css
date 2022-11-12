@@ -39,7 +39,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 body {
@@ -474,8 +473,7 @@ body {
 }
 
 .team__photo {
-  width: 270px;
-  height: 260px;
+  width: 100%;
   left: 215px;
   top: 1632px;
 }

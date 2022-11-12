@@ -169,12 +169,7 @@
                   srcset="./photo/img--22-mobile.jpg 1x, ./photo/img--22-mobile-2x.jpg 2x"
                   media="(max-width: 767px)"
                 />
-                <img
-                  class="team__photo"
-                  src="./photo/img--22-mobile.jpg"
-                  alt="дизайнер"
-                  width="450"
-                />
+                <img class="team__photo" src="./photo/img--22-mobile.jpg" alt="дизайнер" />
               </picture>
 
               <div class="team__data">
@@ -209,12 +204,21 @@
               </div>
             </li>
             <li class="team__member">
-              <img
-                class="team__photo"
-                src="./photo/img-4.jpg"
-                alt="фронтент розробнік"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./photo/img-4-desktop.jpg, ./photo/img-4-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./photo/img-4-tablet.jpg 1x, ./photo/img-4-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./photo/img-4-mobile.jpg 1x, ./photo/img-4-mobile-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="team__photo" src="./photo/img-4-mobile.jpg" alt="фронтент розробнік" />
+              </picture>
               <div class="team__data">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__speciality">Frontend Developer</p>
@@ -247,7 +251,21 @@
               </div>
             </li>
             <li class="team__member">
-              <img class="team__photo" src="./photo/img-5.jpg" alt="маркетинг" width="270" />
+              <picture>
+                <source
+                  srcset="./photo/img-5-desktop.jpg, ./photo/img-5-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./photo/img-5-tablet.jpg 1x, ./photo/img-5-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./photo/img-5-mobile.jpg 1x, ./photo/img-5-mobile-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="team__photo" src="./photo/img-5-mobile.jpg" alt="маркетинг" />
+              </picture>
               <div class="team__data">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__speciality">Marketing</p>
@@ -280,7 +298,21 @@
               </div>
             </li>
             <li class="team__member">
-              <img class="team__photo" src="./photo/img-6.jpg" alt="ЮЛ дизайнер" width="270" />
+              <picture>
+                <source
+                  srcset="./photo/img-6-desktop.jpg, ./photo/img-6-desktop-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./photo/img-6-tablet.jpg 1x, ./photo/img-6-tablet-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./photo/img-6-mobile.jpg 1x, ./photo/img-6-mobile-2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="team__photo" src="./photo/img-6-mobile.jpg" alt="ЮЛ дизайнер" />
+              </picture>
               <div class="team__data">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__speciality">UI Designer</p>
