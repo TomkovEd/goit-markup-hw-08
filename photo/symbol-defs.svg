@@ -80,5 +80,8 @@
       
       <path fill="#fff" style="fill:var(--color2, #fff);stroke:var(--color2, #fff)" stroke="#fff" stroke-width=".427" d="m8.442 16.538-.147-.141-.147.139-2.057 1.95.162.156 7.605 7.253.147-.141 16.171-15.426-.162-.154-2.029-1.935-.147.141-13.98 13.325-5.417-5.167z"/>
     </symbol>
+    <symbol id="icon-menu_40px" viewBox="0 0 32 32">
+      <path d="M6.4 11.734V9.6h19.2v2.134H6.4zm0 5.332h19.2v-2.133H6.4v2.133zm0 5.334h19.2v-2.134H6.4V22.4z"/>
+    </symbol>
   </defs>
 </svg>

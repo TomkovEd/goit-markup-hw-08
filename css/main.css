@@ -134,19 +134,21 @@ body {
   background-color: var(--contacts-footer-colour);
   border-bottom: 1px solid #ececec;
 }
-@media screen and (max-width: 1200px) {
-  .header {
-    display: none;
-  }
-}
 
 .header__page {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__navigation {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .header__navigation {
+    display: none;
+  }
 }
 
 /*Logo*/
@@ -209,6 +211,11 @@ body {
   align-items: center;
   margin-left: auto;
 }
+@media screen and (max-width: 768px) {
+  .contact {
+    display: none;
+  }
+}
 
 .contact__item {
   margin-right: 50px;
@@ -238,6 +245,112 @@ body {
 }
 .contact__link:hover .contact__icon, .contact__link:focus .contact__icon {
   fill: var(--accent-colour);
+}
+
+@media screen and (min-width: 768px) {
+  .open-menu-btn {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0px;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.mob-menu > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.mob__close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  background-color: var(--bot-logo-colour);
+}
+
+.mob-menu__navigation {
+  margin-left: 40px;
+}
+
+.mob-menu__list {
+  display: block;
+}
+
+.mob-menu__item:not(last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.02;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mob__contact {
+  margin-left: 40px;
+  margin-bottom: 64px;
+}
+
+.mob__contact__item {
+  margin-bottom: 32px;
+}
+
+.mob__tel__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob__mail__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob__social {
+  margin-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mob__social__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .hero {
