@@ -27,7 +27,10 @@
     <!--HEADER-->
     <header class="header">
       <div class="container header__page">
-        <a class="logo link" href="./index.html"> <span class="logo__web">Web</span>Studio</a>
+        <div class="logo__box">
+          <a class="logo link" href="./index.html"> <span class="logo__web">Web</span>Studio</a>
+        </div>
+
         <nav class="header__navigation">
           <ul class="navigation list">
             <li class="navigation__item">
@@ -60,8 +63,8 @@
             >
           </li>
         </ul>
-        <div>
-          <button type="button" class="open-menu-btn" data-menu-open>
+        <div class="menu__box">
+          <button type="button" class="open-menu-btn" data-mobile-open>
             <svg width="40" height="40">
               <use href="./photo/symbol-defs.svg#icon-menu_40px"></use>
             </svg>
@@ -69,10 +72,10 @@
         </div>
       </div>
 
-      <div class="mob-menu is-hidden" data-menu>
+      <div class="mob-menu is-hidden" data-mobile>
         <div class="container">
-          <button class="mob__close-button" data-menu-close>
-            <svg class="close-button__icon" width="19" height="19">
+          <button class="mob__close__button" data-mobile-close>
+            <svg class="mob__button__icon" width="19" height="19">
               <use href="./photo/symbol-defs.svg#icon-close-black"></use>
             </svg>
           </button>
@@ -80,7 +83,7 @@
             <nav class="mob-menu__navigation">
               <ul class="mob-menu__list list">
                 <li class="mob-menu__item">
-                  <a class="mob-menu__link link" href="">Студія</a>
+                  <a class="mob-menu__link link .mob-menu__link--current" href="">Студія</a>
                 </li>
                 <li class="mob-menu__item">
                   <a class="mob-menu__link link" href="./portfolio.html">Портфоліо</a>
@@ -103,10 +106,18 @@
               </li>
             </ul>
             <ul class="mob__social">
-              <li><a class="mob__social__link link" href="">Instagram</a></li>
-              <li><a class="mob__social__link link" href="">Twitter</a></li>
-              <li><a class="mob__social__link link" href="">Facebook</a></li>
-              <li><a class="mob__social__link link" href="">LinkedIn</a></li>
+              <li class="mob__social__item">
+                <a class="mob__social__link link" href="">Instagram</a>
+              </li>
+              <li class="mob__social__item">
+                <a class="mob__social__link link" href="">Twitter</a>
+              </li>
+              <li class="mob__social__item">
+                <a class="mob__social__link link" href="">Facebook</a>
+              </li>
+              <li class="mob__social__item">
+                <a class="mob__social__link link" href="">LinkedIn</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -569,6 +580,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>

@@ -82,6 +82,11 @@ body {
   }
 }
 
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .list {
   list-style: none;
   padding-left: 0px;
@@ -129,6 +134,7 @@ body {
 }
 
 .header {
+  width: 100%;
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: var(--contacts-footer-colour);
@@ -137,8 +143,12 @@ body {
 
 .header__page {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.menu__box {
+  margin-left: auto;
+  margin-right: 0px;
 }
 
 .header__navigation {
@@ -257,8 +267,8 @@ body {
   position: fixed;
   top: 0px;
   background-color: #ffffff;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -271,7 +281,7 @@ body {
   overflow: auto;
 }
 
-.mob__close-button {
+.mob__close__button {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -285,6 +295,14 @@ body {
   background-color: var(--bot-logo-colour);
 }
 
+.mob__button__icon {
+  fill: #000000;
+  transition: fill var(--timeing-funktion);
+}
+.mob__close__button:hover .mob__button__icon, .mob__close__button:focus .mob__button__icon {
+  fill: var(--accent-colour);
+}
+
 .mob-menu__navigation {
   margin-left: 40px;
 }
@@ -293,8 +311,12 @@ body {
   display: block;
 }
 
-.mob-menu__item:not(last-child) {
+.mob-menu__item {
   margin-bottom: 32px;
+}
+
+.mob-menu__link--current {
+  color: #2196f3;
 }
 
 .mob-menu__link {
@@ -305,6 +327,9 @@ body {
   line-height: 1.02;
   letter-spacing: 0.02em;
   color: #212121;
+}
+.mob-menu__link:hover, .mob-menu__link:focus {
+  color: var(--accent-colour);
 }
 
 .mob__contact {
@@ -340,7 +365,13 @@ body {
   margin-left: 40px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  row-gap: 10px;
+}
+
+.mob__social__item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob__social__link {
@@ -366,8 +397,8 @@ body {
 }
 
 .hero--background {
-  height: 400px;
-  width: 480px;
+  height: 100%;
+  width: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/photo/Header-mg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -932,8 +963,8 @@ body {
   top: 50%;
   left: 50%;
   padding: 40px;
-  height: 581px;
-  width: 528px;
+  width: calc(100% - 60px);
+  height: 609px;
   background-color: var(--bot-logo-colour);
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--timeing-funktion);
@@ -1019,7 +1050,6 @@ body {
 
 .form__picture {
   height: 40px;
-  width: 448px;
   position: relative;
 }
 

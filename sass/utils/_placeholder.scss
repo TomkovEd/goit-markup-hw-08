@@ -75,7 +75,10 @@ body {
   // @include tablet {width: 768px;}
   // @include desktop {width: 1200px;}
 }
-
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 .list {
   list-style: none;
   padding-left: 0px;
