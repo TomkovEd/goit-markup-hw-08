@@ -143,11 +143,11 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-image: url(/photo/icon-check-white.svg);
   box-shadow: 0 0 0 0.1em var(--title-colour);
   transition: background-color var(--timeing-funktion), box-shadow var(--timeing-funktion);
 
   .checkbox:checked + & {
-    background-image: url(/photo/icon-check-white.svg);
     background-origin: border-box;
     box-shadow: 0 0 0 0.1em var(--buttom-colour);
     background-color: var(--buttom-colour);
