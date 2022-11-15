@@ -146,7 +146,21 @@ body {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .header__page {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__page {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__page {
+    width: 1200px;
+  }
 }
 
 .header__navigation {
@@ -171,9 +185,25 @@ body {
   color: var(--accent-colour);
 }
 
+@media screen and (min-width: 768px) {
+  .logo__box {
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo__box {
+    margin-right: 88px;
+  }
+}
+
 .navigation {
   display: flex;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-right: 90px;
+  }
 }
 
 .navigation__link {
@@ -214,30 +244,46 @@ body {
 
 /* Contacts */
 .contact {
+  margin-left: auto;
   margin-right: 0px;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  row-gap: 10px;
+  gap: 10px;
 }
 @media screen and (max-width: 768px) {
   .contact {
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact {
+    display: block;
+    row-gap: 10px;
+  }
+}
 
 .contact__link {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
+  font-size: 12px;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--contacts-header-colour);
   transition: color var(--timeing-funktion);
 }
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+  }
+}
 .contact__link:hover, .contact__link:focus {
   color: var(--accent-colour);
+}
+
+.contact__link:last-child {
+  margin-bottom: 0px;
 }
 
 .contact__icon {
@@ -257,6 +303,8 @@ body {
 
 .mob-menu {
   position: fixed;
+  width: 80%;
+  height: 80%;
   top: 0px;
   background-color: #ffffff;
   width: 100%;
