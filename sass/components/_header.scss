@@ -1,9 +1,18 @@
 .header {
   width: 100%;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   background-color: var(--contacts-footer-colour);
   border-bottom: 1px solid #ececec;
+
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 .header__page {
   width: 100%;
@@ -25,7 +34,7 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -43,6 +52,7 @@
 }
 
 .logo__box {
+  padding: 0px;
   @include tablet {
     margin-right: 87px;
   }
@@ -106,12 +116,18 @@
   flex-wrap: wrap;
   gap: 10px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
+  @include desktop {
+    gap: 30px;
+  }
+}
+.contact__item {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: block;
-    row-gap: 10px;
+  }
+  @include desktop {
   }
 }
 
@@ -150,6 +166,7 @@
   }
 }
 .open-menu-btn {
+  padding: 0px;
   background-color: var(--bot-logo-colour);
   @media screen and (min-width: 768px) {
     display: none;
@@ -209,9 +226,7 @@
 .mob-menu__item {
   margin-bottom: 32px;
 }
-.mob-menu__link--current {
-  color: #2196f3;
-}
+
 .mob-menu__link {
   font-family: 'Roboto';
   font-style: normal;
@@ -226,6 +241,10 @@
   &:focus {
     color: var(--accent-colour);
   }
+}
+
+.link--current {
+  color: #2196f3;
 }
 
 .mob__contact {

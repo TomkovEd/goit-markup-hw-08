@@ -1,45 +1,47 @@
+.clients__title {
+  margin-bottom: 30px;
 
-  .clients__title {
-    margin-bottom: 30px;
-  
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-colour);
-    @include desktop{margin-bottom: 50px;}
-
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-colour);
+  @include desktop {
+    margin-bottom: 50px;
   }
-  
-  .client__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.17;
   }
-  
-  .client__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 92px;
-    width: 170px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    transition: border var(--timeing-funktion), color var(--timeing-funktion);
-    color: #afb1b8;
+}
 
-    &:hover,
+.client__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.client__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border var(--timeing-funktion), color var(--timeing-funktion);
+  color: #afb1b8;
+
+  &:hover,
   &:focus {
     border: 1px solid var(--buttom-colour);
     color: var(--buttom-colour);
   }
-  }
-  
-  
-  .client__icon {
-    fill: currentColor;
-  }
-  
+}
+
+.client__icon {
+  fill: currentColor;
+}

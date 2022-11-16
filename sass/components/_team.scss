@@ -10,6 +10,11 @@
   text-align: center;
   color: var(--title-colour);
 
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+
   @include desktop {
     margin-bottom: 50px;
   }
